@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS steps;
+DROP TABLE IF EXISTS runs;
+
+CREATE TABLE runs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  status TEXT NOT NULL
+);
+
+CREATE TABLE steps (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  run_id INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  description TEXT,
+  status TEXT NOT NULL,
+  FOREIGN KEY (run_id) REFERENCES runs(id)
+);
