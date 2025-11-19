@@ -1,14 +1,14 @@
-type RunStatus = 'pending' | 'in_progress' | 'completed';
-type StepStatus = 'pending' | 'assigned' | 'completed';
+export type RunStatus = 'pending' | 'in_progress' | 'completed';
+export type StepStatus = 'pending' | 'assigned' | 'completed';
 
-type Run = {
+export type Run = {
   id: number;
   title: string;
   createdAt: string;
   status: RunStatus;
 };
 
-type Step = {
+export type Step = {
   id: number;
   runId: number;
   title: string;
