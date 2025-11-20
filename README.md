@@ -6,6 +6,12 @@ The goal was to take a starter template and build a small but meaningful feature
 
 ---
 
+## Screenshot
+
+Here is a preview of the demo UI:
+
+![ProcessCoach demo screenshot](./public/main.png)
+
 ## Features
 
 ### **1. Runs List**
